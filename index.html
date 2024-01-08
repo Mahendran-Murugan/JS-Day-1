@@ -2,8 +2,42 @@
 <html lang="en">
 <head>
     <title>First Website for JS</title>
+    <style>
+        .center{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1{
+            color: red;
+        }
+
+        h2{
+            color: orangered;
+        }
+        body{
+
+            background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="center">
+        <h1 id="text"> This is My First Website With JavaScript</h1>
+        <button onclick="change()">Click to Change Text</button>
+        <br>
+        <h2>Watch this Video Below For Educational Content</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/obyaWeSHMDo?si=BrmMbkbYuOwPH0F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script>
+        //Function to Change the Text
+        function change(){
+            document.getElementById("text").innerHTML = " This is New Text";
+        }
+    </script>
 </body>
 </html>
