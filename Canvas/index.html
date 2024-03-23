@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas
+    id = "canvas"
+    width="400"
+    height="300"
+    >
+    </canvas>
+</body>
+<script>
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    context.strokeStyle = "#00FF00";
+    context.lineWidth = 2;
+    context.beginPath();
+    context.moveTo(50, 50);
+    context.lineTo(150, 50);
+    context.stroke();
+    context.beginPath();
+    context.rect(200, 50, 100, 75);
+    context.stroke();
+</script>
+</html>
